@@ -1,4 +1,4 @@
-script.js
+
 
 let net;
 let modelLoaded = false;
