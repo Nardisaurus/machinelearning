@@ -1,0 +1,28 @@
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Classifier</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script&gt;
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>;
+</head>
+<body>
+    <div class="container">
+        <h1>AI Image Classifier</h1>
+        <label for="image-upload" class="custom-file-upload">Choose File</label>
+        <input type="file" id="image-upload" accept="image/*">
+        <div class="image-preview" id="image-preview">
+            <p class="placeholder-text">No image uploaded yet.</p>
+            <img id="image" src="" alt="Image Preview" style="display: none;">
+        </div>
+        <button id="classify-button" class="classify-button" style="display: none;">Classify Image</button>
+        <div id="results" class="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
